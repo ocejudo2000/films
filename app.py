@@ -8,7 +8,7 @@ from PIL import Image
 # Importaciones para MoviePy v2.2.1
 from moviepy.video.io.VideoFileClip import VideoFileClip
 from moviepy.audio.io.AudioFileClip import AudioFileClip
-from moviepy.video.compositing.concatenate import concatenate_videoclips
+from moviepy.video.compositing.concatenate_videoclips import concatenate_videoclips
 from moviepy.audio.AudioClip import concatenate_audioclips
 import moviepy.video.fx.all as vfx
 
