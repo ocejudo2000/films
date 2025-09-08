@@ -5,7 +5,7 @@ import time
 from pathlib import Path
 import numpy as np
 from PIL import Image
-# Importaciones para MoviePy v2.2.1
+# Importaciones para MoviePy v2.2.1 (actualizado)
 from moviepy.video.io.VideoFileClip import VideoFileClip
 from moviepy.audio.io.AudioFileClip import AudioFileClip
 from moviepy import concatenate_videoclips
