@@ -1,6 +1,7 @@
 streamlit>=1.22.0
 python-ffmpeg>=2.0.0
-moviepy>=1.0.3
+moviepy==2.2.1
+imageio-ffmpeg>=0.4.8
 pillow>=9.0.0
 numpy>=1.22.0
 pandas>=1.4.0

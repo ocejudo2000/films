@@ -5,8 +5,8 @@ import time
 from pathlib import Path
 import numpy as np
 from PIL import Image
-import moviepy.editor as mp
-from moviepy.editor import VideoFileClip, AudioFileClip, concatenate_videoclips, vfx
+from moviepy.editor import *
+import moviepy.video.fx.all as vfx
 
 # Configuración de la página
 st.set_page_config(
@@ -156,7 +156,7 @@ def process_videos():
                 if audio_clip.duration < video_duration:
                     # Repetir el audio hasta que sea suficientemente largo
                     repeats = int(np.ceil(video_duration / audio_clip.duration))
-                    audio_clip = mp.concatenate_audioclips([audio_clip] * repeats)
+                    audio_clip = concatenate_audioclips([audio_clip] * repeats)
                 
                 # Recortar el audio para que coincida exactamente con la duración del video
                 audio_clip = audio_clip.subclip(0, video_duration)
